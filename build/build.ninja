@@ -1021,12 +1021,137 @@ build day5\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
   restat = 1
 build day5\edit_cache: phony day5\CMakeFiles\edit_cache.util
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# D:/VSCode/CMake/AdventOfCode/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target puzzle11
+
+
+#############################################
+# Order-only phony target for puzzle11
+
+build cmake_object_order_depends_target_puzzle11: phony || day6\CMakeFiles\puzzle11.dir
+build day6\CMakeFiles\puzzle11.dir\day6_1.cpp.obj: CXX_COMPILER__puzzle11 ..\day6\day6_1.cpp || cmake_object_order_depends_target_puzzle11
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
+  OBJECT_DIR = day6\CMakeFiles\puzzle11.dir
+  OBJECT_FILE_DIR = day6\CMakeFiles\puzzle11.dir
+  TARGET_COMPILE_PDB = day6\CMakeFiles\puzzle11.dir\
+  TARGET_PDB = day6\puzzle11.pdb
+
+# =============================================================================
+# Link build statements for EXECUTABLE target puzzle11
+
+
+#############################################
+# Link the executable day6\puzzle11.exe
+
+build day6\puzzle11.exe: CXX_EXECUTABLE_LINKER__puzzle11 day6\CMakeFiles\puzzle11.dir\day6_1.cpp.obj
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = day6\CMakeFiles\puzzle11.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = day6\CMakeFiles\puzzle11.dir\
+  TARGET_FILE = day6\puzzle11.exe
+  TARGET_IMPLIB = day6\puzzle11.lib
+  TARGET_PDB = day6\puzzle11.pdb
+# =============================================================================
+# Object build statements for EXECUTABLE target puzzle12
+
+
+#############################################
+# Order-only phony target for puzzle12
+
+build cmake_object_order_depends_target_puzzle12: phony || day6\CMakeFiles\puzzle12.dir
+build day6\CMakeFiles\puzzle12.dir\day6_2.cpp.obj: CXX_COMPILER__puzzle12 ..\day6\day6_2.cpp || cmake_object_order_depends_target_puzzle12
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1   -std:c++17
+  OBJECT_DIR = day6\CMakeFiles\puzzle12.dir
+  OBJECT_FILE_DIR = day6\CMakeFiles\puzzle12.dir
+  TARGET_COMPILE_PDB = day6\CMakeFiles\puzzle12.dir\
+  TARGET_PDB = day6\puzzle12.pdb
+
+# =============================================================================
+# Link build statements for EXECUTABLE target puzzle12
+
+
+#############################################
+# Link the executable day6\puzzle12.exe
+
+build day6\puzzle12.exe: CXX_EXECUTABLE_LINKER__puzzle12 day6\CMakeFiles\puzzle12.dir\day6_2.cpp.obj
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = day6\CMakeFiles\puzzle12.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = day6\CMakeFiles\puzzle12.dir\
+  TARGET_FILE = day6\puzzle12.exe
+  TARGET_IMPLIB = day6\puzzle12.lib
+  TARGET_PDB = day6\puzzle12.pdb
+
+#############################################
+# Utility command for package
+
+build day6\CMakeFiles\package.util: CUSTOM_COMMAND day6\all
+  COMMAND = cmd.exe /C "cd /D D:\VSCode\CMake\AdventOfCode\build && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackConfig.cmake"
+  DESC = Run CPack packaging tool...
+  pool = console
+  restat = 1
+build day6\package: phony day6\CMakeFiles\package.util
+
+#############################################
+# Utility command for package_source
+
+build day6\CMakeFiles\package_source.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D D:\VSCode\CMake\AdventOfCode\build && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake D:/VSCode/CMake/AdventOfCode/build/CPackSourceConfig.cmake"
+  DESC = Run CPack packaging tool for source...
+  pool = console
+  restat = 1
+build day6\package_source: phony day6\CMakeFiles\package_source.util
+
+#############################################
+# Utility command for rebuild_cache
+
+build day6\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D D:\VSCode\CMake\AdventOfCode\build\day6 && "C:\Program Files\CMake\bin\cmake.exe" -Sd:\VSCode\CMake\AdventOfCode -Bd:\VSCode\CMake\AdventOfCode\build"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+build day6\rebuild_cache: phony day6\CMakeFiles\rebuild_cache.util
+
+#############################################
+# Utility command for test
+
+build day6\CMakeFiles\test.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D D:\VSCode\CMake\AdventOfCode\build\day6 && "C:\Program Files\CMake\bin\ctest.exe" --force-new-ctest-process "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+build day6\test: phony day6\CMakeFiles\test.util
+
+#############################################
+# Utility command for edit_cache
+
+build day6\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D D:\VSCode\CMake\AdventOfCode\build\day6 && "C:\Program Files\CMake\bin\cmake-gui.exe" -Sd:\VSCode\CMake\AdventOfCode -Bd:\VSCode\CMake\AdventOfCode\build"
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+build day6\edit_cache: phony day6\CMakeFiles\edit_cache.util
+# =============================================================================
 # Target aliases.
 
 build puzzle1: phony day1\puzzle1.exe
 build puzzle1.exe: phony day1\puzzle1.exe
 build puzzle10: phony day5\puzzle10.exe
 build puzzle10.exe: phony day5\puzzle10.exe
+build puzzle11: phony day6\puzzle11.exe
+build puzzle11.exe: phony day6\puzzle11.exe
+build puzzle12: phony day6\puzzle12.exe
+build puzzle12.exe: phony day6\puzzle12.exe
 build puzzle2: phony day1\puzzle2.exe
 build puzzle2.exe: phony day1\puzzle2.exe
 build puzzle3: phony day2\puzzle3.exe
@@ -1078,6 +1203,12 @@ build  day4\all: phony puzzle7 puzzle8
 
 build  day5\all: phony puzzle10 puzzle9
 # =============================================================================
+
+#############################################
+# Folder: D:/VSCode/CMake/AdventOfCode/build/day6
+
+build  day6\all: phony puzzle11 puzzle12
+# =============================================================================
 # Unknown Build Time Dependencies.
 # Tell Ninja that they may appear as side effects of build rules
 # otherwise ordered by order-only dependencies.
@@ -1089,7 +1220,7 @@ build  day5\all: phony puzzle10 puzzle9
 #############################################
 # The main all target.
 
-build all: phony day1\puzzle1.exe day1\puzzle2.exe day2\puzzle3.exe day2\puzzle4.exe day3\puzzle5.exe day3\puzzle6.exe day4\puzzle7.exe day4\puzzle8.exe day5\puzzle10.exe day5\puzzle9.exe
+build all: phony day1\puzzle1.exe day1\puzzle2.exe day2\puzzle3.exe day2\puzzle4.exe day3\puzzle5.exe day3\puzzle6.exe day4\puzzle7.exe day4\puzzle8.exe day5\puzzle10.exe day5\puzzle9.exe day6\puzzle11.exe day6\puzzle12.exe
 
 #############################################
 # Make the all target the default.
@@ -1099,13 +1230,13 @@ default all
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ..\CMakeLists.txt ..\day1\CMakeLists.txt ..\day2\CMakeLists.txt ..\day3\CMakeLists.txt ..\day4\CMakeLists.txt ..\day5\CMakeLists.txt C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CMakeCInformation.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CMakeRCInformation.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CPack.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CPackComponent.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CTest.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CTestTargets.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CTestUseLaunchers.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\Compiler\Clang-C.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\Compiler\Clang-CXX.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\Compiler\Clang.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\DartConfiguration.tcl.in C$:\Program$ Files\CMake\share\cmake-3.13\Modules\Platform\Windows-Clang-C.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\Platform\Windows-Clang-CXX.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\Platform\Windows-Clang.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\Platform\Windows.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Templates\CPackConfig.cmake.in CMakeCache.txt CMakeFiles\3.13.0-rc2\CMakeCCompiler.cmake CMakeFiles\3.13.0-rc2\CMakeCXXCompiler.cmake CMakeFiles\3.13.0-rc2\CMakeRCCompiler.cmake CMakeFiles\3.13.0-rc2\CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ..\CMakeLists.txt ..\day1\CMakeLists.txt ..\day2\CMakeLists.txt ..\day3\CMakeLists.txt ..\day4\CMakeLists.txt ..\day5\CMakeLists.txt ..\day6\CMakeLists.txt C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CMakeCInformation.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CMakeRCInformation.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CPack.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CPackComponent.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CTest.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CTestTargets.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CTestUseLaunchers.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\Compiler\Clang-C.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\Compiler\Clang-CXX.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\Compiler\Clang.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\DartConfiguration.tcl.in C$:\Program$ Files\CMake\share\cmake-3.13\Modules\Platform\Windows-Clang-C.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\Platform\Windows-Clang-CXX.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\Platform\Windows-Clang.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\Platform\Windows.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Templates\CPackConfig.cmake.in CMakeCache.txt CMakeFiles\3.13.0-rc2\CMakeCCompiler.cmake CMakeFiles\3.13.0-rc2\CMakeCXXCompiler.cmake CMakeFiles\3.13.0-rc2\CMakeRCCompiler.cmake CMakeFiles\3.13.0-rc2\CMakeSystem.cmake
   pool = console
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ..\CMakeLists.txt ..\day1\CMakeLists.txt ..\day2\CMakeLists.txt ..\day3\CMakeLists.txt ..\day4\CMakeLists.txt ..\day5\CMakeLists.txt C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CMakeCInformation.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CMakeRCInformation.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CPack.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CPackComponent.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CTest.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CTestTargets.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CTestUseLaunchers.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\Compiler\Clang-C.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\Compiler\Clang-CXX.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\Compiler\Clang.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\DartConfiguration.tcl.in C$:\Program$ Files\CMake\share\cmake-3.13\Modules\Platform\Windows-Clang-C.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\Platform\Windows-Clang-CXX.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\Platform\Windows-Clang.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\Platform\Windows.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Templates\CPackConfig.cmake.in CMakeCache.txt CMakeFiles\3.13.0-rc2\CMakeCCompiler.cmake CMakeFiles\3.13.0-rc2\CMakeCXXCompiler.cmake CMakeFiles\3.13.0-rc2\CMakeRCCompiler.cmake CMakeFiles\3.13.0-rc2\CMakeSystem.cmake: phony
+build ..\CMakeLists.txt ..\day1\CMakeLists.txt ..\day2\CMakeLists.txt ..\day3\CMakeLists.txt ..\day4\CMakeLists.txt ..\day5\CMakeLists.txt ..\day6\CMakeLists.txt C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CMakeCInformation.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CMakeRCInformation.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CPack.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CPackComponent.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CTest.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CTestTargets.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\CTestUseLaunchers.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\Compiler\Clang-C.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\Compiler\Clang-CXX.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\Compiler\Clang.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\DartConfiguration.tcl.in C$:\Program$ Files\CMake\share\cmake-3.13\Modules\Platform\Windows-Clang-C.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\Platform\Windows-Clang-CXX.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\Platform\Windows-Clang.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\Platform\Windows.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files\CMake\share\cmake-3.13\Templates\CPackConfig.cmake.in CMakeCache.txt CMakeFiles\3.13.0-rc2\CMakeCCompiler.cmake CMakeFiles\3.13.0-rc2\CMakeCXXCompiler.cmake CMakeFiles\3.13.0-rc2\CMakeRCCompiler.cmake CMakeFiles\3.13.0-rc2\CMakeSystem.cmake: phony
 
 #############################################
 # Clean all the built files.

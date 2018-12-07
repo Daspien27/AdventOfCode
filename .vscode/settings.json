@@ -62,6 +62,9 @@
         "array": "cpp",
         "iterator": "cpp",
         "optional": "cpp",
-        "numeric": "cpp"
+        "numeric": "cpp",
+        "deque": "cpp",
+        "stack": "cpp",
+        "unordered_set": "cpp"
     }
 }
