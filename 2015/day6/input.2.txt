@@ -1,0 +1,5 @@
+turn on 865,813 through 931,878
+turn on 546,959 through 760,965
+turn on 756,965 through 813,993
+turn on 790,684 through 865,878
+toggle 692,845 through 867,995
